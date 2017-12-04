@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tweet Map</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.png') }}">
+    <link href='https://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="h2"><font face="Montserrat"><center><h1>Tweet Map</h1></center></font></div>
+
+    <div id="h3" style="position:absolute;left:40px;top:200px;">
+        <font face="Montserrat"  color="black"><h3>Tweet Keywords</h3></font>
+    </div>
+
+    <div id="drop" style="position:absolute;left:40px;top:50px;width:200px;height:20px;">
+        <select id = "userSelection" onchange="elasticsearch(this.value);">
+            <option selected="true" value="- Select Keyword -"> - Select Keyword - </option>
+            <option value="technology">Technology</option>
+            <option value="love"> love </option>
+            <option value="sport"> sport </option>
+            <option value="music"> music </option>
+        </select>
+    </div>
+    <div id="map-canvas" style="position:absolute;left:40px;top:100px;width:1050px;height:570px"> </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhq7OkONGSKbbSJzzY4uTh8XJAdoD7kbE&v=3.exp&libraries=visualization"></script>
+<script src="js/main.js" type="text/javascript"> </script>
+
+</html>

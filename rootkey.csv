@@ -1,0 +1,4 @@
+AWSAccessKeyId=AKIAIATAPMMA73TOWOVA
+AWSSecretKey=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
+
+pip install --target=/Users/Tory/Documents/Cloud\ Computing/Assignment\ 2/AWS\ Lambda\ Function elasticsearch requests_aws4auth 
